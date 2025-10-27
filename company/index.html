@@ -1,0 +1,1139 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>About Us</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* HEADER STYLES */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0066ff;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+.header-nav a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #0066ff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.btn-signin {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #0066ff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-signin:hover {
+  color: #0052cc;
+}
+
+.btn-signup {
+  padding: 0.625rem 1.25rem;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #0052cc;
+}
+
+/* FOOTER STYLES */
+.site-footer {
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-section a {
+  color: #b8b8b8;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #0066ff;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .header-nav {
+    order: 3;
+    flex-basis: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .header-nav a {
+    font-size: 0.85rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* About Us - Page CSS */
+.company-main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* MISSION SECTION */
+.mission-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0066ff;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+/* STORY SECTION */
+.story-section {
+  padding: 4rem 2rem;
+}
+
+.story-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.story-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+  border-color: #0066ff;
+}
+
+.story-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #0066ff;
+}
+
+.story-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* VALUES SECTION */
+.values-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.value-item {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.value-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #0066ff;
+}
+
+.value-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 4rem 2rem;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+}
+
+.member-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.team-member h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.member-title {
+  font-size: 0.9rem;
+  color: #0066ff;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* IMPACT SECTION */
+.impact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  color: white;
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cta-section p {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .values-section h2,
+  .team-section h2,
+  .impact-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .story-grid,
+  .values-grid,
+  .team-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .mission-section,
+  .story-section,
+  .values-section,
+  .team-section,
+  .impact-section,
+  .cta-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .values-section h2,
+  .team-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .story-card,
+  .value-item,
+  .team-member,
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 0.875rem 2rem;
+  }
+}.company-main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* MISSION SECTION */
+.mission-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0066ff;
+}
+
+.mission-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+}
+
+/* STORY SECTION */
+.story-section {
+  padding: 4rem 2rem;
+}
+
+.story-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.story-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.story-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+  border-color: #0066ff;
+}
+
+.story-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #0066ff;
+}
+
+.story-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* VALUES SECTION */
+.values-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.value-item {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.value-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #0066ff;
+}
+
+.value-item p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 4rem 2rem;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 255, 0.12);
+}
+
+.member-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.team-member h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.member-title {
+  font-size: 0.9rem;
+  color: #0066ff;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* IMPACT SECTION */
+.impact-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
+  color: white;
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cta-section p {
+  font-size: 1.05rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .values-section h2,
+  .team-section h2,
+  .impact-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .story-grid,
+  .values-grid,
+  .team-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .mission-section,
+  .story-section,
+  .values-section,
+  .team-section,
+  .impact-section,
+  .cta-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .mission-section h2,
+  .story-section h2,
+  .values-section h2,
+  .team-section h2,
+  .impact-section h2,
+  .cta-section h2 {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .story-card,
+  .value-item,
+  .team-member,
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 0.875rem 2rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <span class="logo-text">Coda + Grammarly</span>
+    </div>
+    <nav class="header-nav">
+      <a href="/coda.io-and-grammarly-merger/product">Product</a>
+      <a href="/coda.io-and-grammarly-merger/solutions">Solutions</a>
+      <a href="/coda.io-and-grammarly-merger/resources">Resources</a>
+      <a href="/coda.io-and-grammarly-merger/company">Company</a>
+      <a href="/coda.io-and-grammarly-merger/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-signin">Sign In</button>
+      <button class="btn-signup">Get Started</button>
+    </div>
+  </div>
+</header><main class="company-main">
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>About Coda + Grammarly</h1>
+      <p class="hero-subtitle">Uniting collaboration and communication to empower teams worldwide</p>
+    </div>
+  </section>
+
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-content">
+        <h2>Our Mission</h2>
+        <p>We're building the future of work by combining powerful document collaboration with intelligent writing assistance. Together, Coda and Grammarly create a unified platform where teams can think, write, and communicate more effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="container">
+      <h2>Our Story</h2>
+      <div class="story-grid">
+        <div class="story-card">
+          <h3>Coda's Foundation</h3>
+          <p>Founded in 2014, Coda reimagined what documents could be—transforming them from static files into living, interactive workspaces where teams collaborate in real-time.</p>
+        </div>
+        <div class="story-card">
+          <h3>Grammarly's Evolution</h3>
+          <p>Since 2009, Grammarly has been the trusted writing assistant for millions, leveraging AI to help people communicate clearly and confidently across all platforms.</p>
+        </div>
+        <div class="story-card">
+          <h3>A Natural Convergence</h3>
+          <p>In 2025, these two industry leaders merged to create something unprecedented—a platform that seamlessly combines structured collaboration with intelligent communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values-section">
+    <div class="container">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon">🤝</div>
+          <h3>Collaboration First</h3>
+          <p>We believe great work happens when teams work together seamlessly, breaking down silos and enabling better communication.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">✨</div>
+          <h3>Clarity Matters</h3>
+          <p>Clear communication drives better decisions. We're committed to helping every voice be heard and understood.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🚀</div>
+          <h3>Innovation Driven</h3>
+          <p>We push boundaries with AI and automation, constantly evolving to meet the changing needs of modern teams.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🌍</div>
+          <h3>Inclusive Design</h3>
+          <p>Our platform serves teams across the globe, built with accessibility and diversity at its core.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🔒</div>
+          <h3>Trust & Security</h3>
+          <p>Your data and privacy are paramount. We maintain the highest standards of security and transparency.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">📈</div>
+          <h3>Customer Success</h3>
+          <p>Your success is our success. We're dedicated to helping you maximize the value of our platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+      <h2>Leadership</h2>
+      <p class="section-intro">Our leadership team brings decades of experience in collaboration, AI, and enterprise software.</p>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-avatar">👤</div>
+          <h3>Shishir Mehrotra</h3>
+          <p class="member-title">Co-founder & Chief Executive Officer</p>
+          <p class="member-bio">Former lead of Google's productivity suite, driving the vision for unified collaboration.</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">👤</div>
+          <h3>Brad Hoover</h3>
+          <p class="member-title">Chief Product Officer</p>
+          <p class="member-bio">Product visionary with a track record of scaling consumer and enterprise platforms.</p>
+        </div>
+        <div class="team-member">
+          <div class="member-avatar">👤</div>
+          <h3>David Friend</h3>
+          <p class="member-title">Chief Business Officer</p>
+          <p class="member-bio">Strategic leader focused on expanding our reach and impact across industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact-section">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">10M+</div>
+          <p class="stat-label">Users Worldwide</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">150+</div>
+          <p class="stat-label">Countries Served</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">500K+</div>
+          <p class="stat-label">Teams Using Our Platform</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <p class="stat-label">Support & Innovation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-container">
+      <h2>Ready to Transform Your Workflow?</h2>
+      <p>Join thousands of teams already using Coda + Grammarly to collaborate smarter and communicate better.</p>
+      <button class="btn-primary">Get Started Free</button>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="/coda.io-and-grammarly-merger/product">Overview</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/product/features">Features</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/product/pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="/coda.io-and-grammarly-merger/solutions/marketing">Marketing</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/solutions/product-teams">Product Teams</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/integrations">Integrations</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/coda.io-and-grammarly-merger/company">About</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/blog">Blog</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/customers">Customers</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/coda.io-and-grammarly-merger/privacy">Privacy</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/security">Security</a></li>
+        <li><a href="/coda.io-and-grammarly-merger/terms">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Coda + Grammarly. All rights reserved.</p>
+  </div>
+</footer></body></html>
